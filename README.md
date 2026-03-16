@@ -38,6 +38,7 @@ python 02_train_models.py
 python 03_validate_models.py
 python 04_generate_suitability_maps.py
 python 05_generate_figures.py
+python 06_ensemble_and_sensitivity.py
 ```
 
 All outputs are written to `outputs/`.
