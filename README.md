@@ -48,7 +48,7 @@ All outputs are written to `outputs/`.
 |---|---|---|
 | UKCP18 climate projections | Met Office / CEDA Archive | 12 km RCM grid |
 | OS Terrain 50 (elevation) | Ordnance Survey | 50 m DTM |
-| UKCEH Land Cover Map 2021 | UK Centre for Ecology & Hydrology | 25 m |
+| CEH Land Cover Map 2024 | UK Centre for Ecology & Hydrology | 25 m |
 | BGS soil texture | British Geological Survey | 1 km |
 | National Grid / road network | ESO ETYS / OS OpenRoads | Vector |
 | REPD (operational sites) | DESNZ | Point locations |
