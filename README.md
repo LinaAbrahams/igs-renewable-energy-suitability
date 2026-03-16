@@ -1,11 +1,11 @@
-# Climate Change Opportunities for Renewable Energy in the UK: A GIS and Machine Learning Approach Using UKCP18 Projections (2040–2060)
+# Climate Change Opportunities for Renewable Energy in the UK: A GIS and Machine Learning Approach Using UKCP18 Projections (2040-2060)
 
 **Author:** Lina Abrahams
-**Programme:** BSc Geography, King's College London, 2025–26
+**Programme:** BSc Geography, King's College London, 2025-26
 
 ## Overview
 
-This project models the suitability of solar, onshore wind, and biomass energy across the UK under baseline and future (RCP8.5, 2040–2060) climate scenarios. Random Forest classifiers are trained on REPD site locations and environmental predictors resampled to a 12 km British National Grid, then applied to UKCP18 climate projections to map how suitability shifts under climate change.
+This project models the suitability of solar, onshore wind, and biomass energy across the UK under baseline and future (RCP8.5, 2040-2060) climate scenarios. Random Forest classifiers are trained on REPD site locations and environmental predictors resampled to a 12 km British National Grid, then applied to UKCP18 climate projections to map how suitability shifts under climate change.
 
 ## Repository Structure
 
