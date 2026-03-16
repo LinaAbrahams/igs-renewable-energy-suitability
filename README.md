@@ -14,9 +14,10 @@ Analysis/
 ├── config.py                         Configuration: grid specs, paths, hyperparameters
 ├── 01_prepare_training_data.py       Presence/pseudo-absence sampling and predictor extraction
 ├── 02_train_models.py                Random Forest training with ensemble seeds
-├── 03_validate_models.py             Accuracy metrics, spatial CV, SHAP, error maps
+├── 03_validate_models.py             Accuracy metrics, spatial CV, SHAP, error maps, correlation matrix
 ├── 04_generate_suitability_maps.py   Baseline/future suitability and delta maps
 ├── 05_generate_figures.py            Publication-ready figures and tables
+└── 06_ensemble_and_sensitivity.py    Ensemble uncertainty analysis and threshold sensitivity
 └── outputs/                          Generated maps, figures, and tables
 ```
 
