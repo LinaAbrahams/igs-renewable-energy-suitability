@@ -2,7 +2,8 @@
 Step 3: Validate trained models and assess reliability.
 
 Runs multi-seed sensitivity analysis, leave-one-region-out spatial
-cross-validation, and generates validation figures.
+cross-validation, generates validation figures, and produces predictor
+correlation matrix (Appendix B).
 """
 
 import sys
@@ -173,6 +174,34 @@ def plot_auc_bars(metrics_df, path):
     plt.close(fig)
 
 
+def plot_correlation_matrix(path):
+    """Pearson correlation matrix for all ten predictors (Solar PV training data).
+    
+    Uses Solar PV training data following dissertation Appendix B, which states:
+    'highest correlations are between tas and rss (r = 0.83), dist_grid and 
+    dist_roads (r = 0.83), and sfcWind and dist_roads (r = 0.79).'
+    """
+    df = pd.read_csv(config.TRAINING_CSV_CLEAN["solar"])
+    corr = df[config.PREDICTOR_COLS].corr()
+
+    fig, ax = plt.subplots(figsize=(9, 8))
+    im = ax.imshow(corr.values, cmap="RdBu_r", vmin=-1, vmax=1)
+    ax.set_xticks(range(len(config.PREDICTOR_COLS)))
+    ax.set_yticks(range(len(config.PREDICTOR_COLS)))
+    ax.set_xticklabels(config.PREDICTOR_COLS, rotation=45, ha="right", fontsize=9)
+    ax.set_yticklabels(config.PREDICTOR_COLS, fontsize=9)
+    for i in range(len(config.PREDICTOR_COLS)):
+        for j in range(len(config.PREDICTOR_COLS)):
+            ax.text(j, i, f"{corr.values[i, j]:.2f}", ha="center", va="center",
+                    fontsize=7, color="black")
+    fig.colorbar(im, label="Pearson r")
+    ax.set_title("Predictor Correlation Matrix (Solar PV training data)")
+    fig.tight_layout()
+    fig.savefig(path, dpi=300)
+    plt.close(fig)
+    print("Correlation matrix saved.")
+
+
 def main():
     config.FIGURES_DIR_CLEAN.mkdir(parents=True, exist_ok=True)
     metrics_df = pd.read_csv(config.MODELS_DIR_CLEAN / "metrics_summary.csv")
@@ -211,6 +240,7 @@ def main():
     plot_model_comparison(metrics_df, figs / "model_comparison.png")
     plot_roc_curves(figs / "roc_curves_combined.png")
     plot_auc_bars(metrics_df, figs / "model_performance_auc.png")
+    plot_correlation_matrix(figs / "correlation_matrix.png")
 
     print("\nDone.")
 
