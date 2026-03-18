@@ -54,7 +54,8 @@ All outputs are written to `outputs/`.
 | BGS soil texture | British Geological Survey | 1 km |
 | National Grid / road network | ESO ETYS / OS OpenRoads | Vector |
 | REPD (operational sites) | DESNZ | Point locations |
-| Protected areas | Natural England / NatureScot | Vector |
+| Protected areas | Natural England (England Only) | Vector |
+
 
 ## License
 
