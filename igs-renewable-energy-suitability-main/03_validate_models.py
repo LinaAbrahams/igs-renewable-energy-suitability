@@ -3,7 +3,7 @@ Step 3: Validate trained models and assess reliability.
 
 Runs multi-seed sensitivity analysis, leave-one-region-out spatial
 cross-validation, generates validation figures, and produces predictor
-correlation matrix (Appendix B).
+correlation matrix (Appendix 2).
 """
 
 import sys
