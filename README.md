@@ -1,4 +1,4 @@
-# Climate Change Opportunities for Renewable Energy in the UK: A GIS and Machine Learning Approach Using UKCP18 Projections (2040-2060)
+# How Will Mid-Century Climate Change Alter the Spatial Suitability of Renewable Energy Across Great Britain? A Machine Learning Assessment Using UKCP18 Projections (2040 - 2060)
 
 **Author:** Lina Abrahams
 **Programme:** BSc Geography, King's College London, 2025-26
