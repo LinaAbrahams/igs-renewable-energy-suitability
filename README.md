@@ -13,7 +13,7 @@ This project models the suitability of solar, onshore wind, and biomass energy a
 Analysis/
 ├── config.py                         Configuration: grid specs, paths, hyperparameters
 ├── 01_prepare_training_data.py       Presence/pseudo-absence sampling and predictor extraction
-├── 02_train_models.py                Random Forest training with ensemble seeds
+├── 02_train_models.py                Random Forest and Logistic Regression training and metrics export
 ├── 03_validate_models.py             Accuracy metrics, spatial CV, SHAP, error maps, correlation matrix
 ├── 04_generate_suitability_maps.py   Baseline/future suitability and delta maps
 ├── 05_generate_figures.py            Publication-ready figures and tables
