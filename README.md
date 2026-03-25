@@ -5,7 +5,7 @@
 
 ## Overview
 
-This project models the suitability of solar, onshore wind, and biomass energy across the UK under baseline and future (RCP8.5, 2040-2060) climate scenarios. Random Forest classifiers are trained on REPD site locations and environmental predictors resampled to a 12 km British National Grid, then applied to UKCP18 climate projections to map how suitability shifts under climate change. Core file paths, predictor lists, seeds, split parameters, and selected model hyperparameters are centralised in config.py. Preliminary hyperparameter testing used during model development is summarised in the dissertation appendix rather than reproduced as a standalone script in this repository.
+This project models the suitability of solar, onshore wind, and biomass energy across the UK under baseline and future (RCP8.5, 2040-2060) climate scenarios. Random Forest classifiers are trained on REPD site locations and environmental predictors resampled to a 12 km British National Grid, then applied to UKCP18 climate projections to map how suitability shifts under climate change. Core file paths, predictor lists, seeds, split parameters, and selected model hyperparameters are centralised in `config.py`. Preliminary hyperparameter testing used during model development is summarised in the dissertation appendix rather than reproduced as a standalone script in this repository.
 
 ## Repository Structure
 
